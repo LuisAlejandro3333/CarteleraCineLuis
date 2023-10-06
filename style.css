@@ -1,0 +1,244 @@
+/* Tipos de letras usadas en el diseño*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Fira+Sans&family=IBM+Plex+Mono:wght@100&family=Lilita+One&family=Noto+Sans+Osmanya&family=Permanent+Marker&family=Rubik+Iso&display=swap');
+/* Tipo de letra Footer*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Bebas+Neue&family=Fira+Sans&family=IBM+Plex+Mono:wght@100&family=Lilita+One&family=Noto+Sans+Osmanya&family=Permanent+Marker&family=Rubik+Iso&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    list-style: none;
+
+}
+/*Diseño de fondo de pagina */
+body{
+    background-color: #21292b;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+   
+}
+/* diseño de fondo de pantalla icono superior */
+header{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+/* logo superior izquierdo */
+.logo-img{
+    width: 40%;
+    height: 30%;
+    margin-left: 0;
+    background-color: #cac5c5;
+    
+}
+/* Barra de busqueda */
+.barra{
+    width: 240%;
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    
+}
+/* Botones de registro e inicio de sesionn*/
+.botones{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: space-evenly;
+}
+.blue{
+    background-color: blue;
+    border-radius: 5px;
+    padding: 5px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.red{
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 2vh;
+}
+/*Barra de navegacion superior */
+nav{
+    background-color: rgb(178, 1, 1);
+    width: 100%;
+    
+}
+.barra-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 2vh;
+    font-family: 'Courier New', Courier, monospace;    
+}
+/*Color de las letras de la barra de navegacion */
+a{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3vh;
+}
+/*Efecto de cambio de color de las letras de la barra de navegacion */
+a:hover{
+    color: #21292b;
+}
+.container{
+    flex-grow: 1;
+    margin: auto;
+    
+
+}
+/*Imagen principal */
+.imagen-superior{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.superior{
+    width: 100%;
+    height:400px;
+}
+/* peliculas inferiores proximo estreno */
+.cartelera{
+    width: 100%;
+    height: 100%;
+       display: flex;
+    flex-direction: row;
+ justify-content: space-evenly;
+ align-content: center;
+ 
+
+}
+.peliculas{
+    width: 90%;
+    height: 40%;
+}
+.img1{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/*Tamaño de letras de las peliculas */
+h2{
+    color: #ece0e0;
+    font-family: 'Abril Fatface', cursive;
+    font-size: large;
+    text-align: center;
+    }
+    /*efecto de resaltar de la letras (nombre de  la peliculas) */
+h2:hover{
+    transform: scale(1.4);
+}
+/*Estilo de letra para proximos estrennos */
+h1{
+    color: #fbfbfb;
+    font-family: 'Abril Fatface', cursive;
+
+}
+.proximos-estrenos{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+/*Boton de ver mas  */
+.ver-mas{
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 2vh;
+    margin-bottom: 9px;
+    margin-left: 9px;
+    
+}
+/*pie de pagina */
+footer{
+    background-color: #ffffff;
+    color: #0b0a0a;
+    width: 100%;
+    font-family: 'Abril Fatface', cursive;
+font-family: 'Permanent Marker', cursive;
+
+}
+/*Iniciamos con el estilo responnsivo para los direfente formatos  */
+@media screen and (max-width: 600px){ 
+    header{
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap ;
+        align-items: center;
+        margin: 0;
+        margin-top: auto;
+        text-align: center;
+    }
+    .logo-img{
+        width: 40%;
+        height: 50%;
+        margin: left 60%;
+    
+    }
+    
+    nav{
+        background-color: rgb(178, 1, 1);
+        width: 100%;
+    }
+    .barra-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 2vh;
+        font-family: 'Courier New', Courier, monospace; 
+           
+    }
+   
+    ul{
+        text-align: center;
+        border: solid 2px white;
+    }
+    .proximos-estrenos{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .cartelera{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center; 
+    }
+    .peliculas{
+        width: 100%;
+    }
+}
